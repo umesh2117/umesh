@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Aadhar Card Registaration Form</legend>
+            <label for="firstname">1.First Name:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter Your First Name" pattern="[a-z]{0,5}" required>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name" pattern="[a-z]{0,5}" required>
+            <br>
+            <br>
+            <label for="email">2.Email:</label>
+            <input type="text" name="email" id="email" placeholder="Enter Your Email" pattern="[a-z0-9@.]{5,30}" required >
+            <br>
+            <br>
+            <label for="number">3.Mobile Number:</label>
+            <input type="text" name="number" id="number" placeholder="Enter Your Number" pattern="[0-9]{10}" required>
+            <br>
+            <br>
+            <label for="dob">4.Date Of Birth:</label>
+            <input type="date" name="dob" id="dob" placeholder="dob" min="2001-09-01" max="2001-09-17" required>
+            <br>
+            <br>
+            <label for="age">5.Age:</label>
+            <input type="number" name="age" id="age" placeholder="age" min="18" max="25" required>
+            <br>
+            <br>
+            <label for="file">6.Upload Your Image:</label>
+            <input type="file" name="file" id="file" placeholder="file" required>
+            <br>
+            <br>
+            <label for="gender">7.Gender:</label>
+            <br>
+            <br>
+            <input type="radio" name="gender" id="male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" required>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+            <br>
+            <br>
+            <label for="ownproperty">8.Own Property:</label>
+            <br>
+            <br>
+            <input type="checkbox" name="ownproperty" id="Bike" required>
+            <label for="bike">Bike</label>
+            <input type="checkbox" name="ownproperty" id="car" required>
+            <label for="car">Car</label>
+            <input type="checkbox" name="ownproperty" id="house" required>
+            <label for="house">House</label>
+            <input type="checkbox" name="ownproperty" id="villas">
+            <label for="villas">Villas</label>
+            <br>
+            <br>
+            <label for="cardtype">9.Choose Your Card Type:</label>
+            <select name="cardtype" id="cardtype">
+                <option value="normal">Normal</option>
+                <option value="masked">Masked</option>
+            </select>
+            <br>
+            <br>
+            <label for="payment">10.Choose Your Payment Method:</label>
+            <input list="payment" name="payment">
+            <datalist id="payment">
+                <option value="phonepe"></option>
+                <option value="googlepay"></option>
+                <option value="paytm"></option>
+                <option value="netbanking"></option>
+            </datalist>
+            <br>
+            <br>
+            <details>
+                <summary><b>comments:</b></summary>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </details>
+            <br>
+            <br>
+            <button formaction="partice.html">submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
